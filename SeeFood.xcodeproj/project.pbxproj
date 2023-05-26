@@ -10,9 +10,10 @@
 		8741795A2A20C25E0053EAD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874179592A20C25E0053EAD1 /* AppDelegate.swift */; };
 		8741795C2A20C25E0053EAD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741795B2A20C25E0053EAD1 /* SceneDelegate.swift */; };
 		8741795E2A20C25E0053EAD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741795D2A20C25E0053EAD1 /* ViewController.swift */; };
-		874179612A20C25E0053EAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8741795F2A20C25E0053EAD1 /* Main.storyboard */; };
 		874179632A20C25E0053EAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874179622A20C25E0053EAD1 /* Assets.xcassets */; };
 		874179662A20C25E0053EAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874179642A20C25E0053EAD1 /* LaunchScreen.storyboard */; };
+		8741796E2A20C2C30053EAD1 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8741796D2A20C2C30053EAD1 /* Inceptionv3.mlmodel */; };
+		874179702A20D4060053EAD1 /* NavBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741796F2A20D4060053EAD1 /* NavBarControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		874179592A20C25E0053EAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8741795B2A20C25E0053EAD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8741795D2A20C25E0053EAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		874179602A20C25E0053EAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		874179622A20C25E0053EAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		874179652A20C25E0053EAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		874179672A20C25E0053EAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8741796D2A20C2C30053EAD1 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		8741796F2A20D4060053EAD1 /* NavBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				874179592A20C25E0053EAD1 /* AppDelegate.swift */,
 				8741795B2A20C25E0053EAD1 /* SceneDelegate.swift */,
 				8741795D2A20C25E0053EAD1 /* ViewController.swift */,
-				8741795F2A20C25E0053EAD1 /* Main.storyboard */,
+				8741796F2A20D4060053EAD1 /* NavBarControllerViewController.swift */,
 				874179622A20C25E0053EAD1 /* Assets.xcassets */,
 				874179642A20C25E0053EAD1 /* LaunchScreen.storyboard */,
 				874179672A20C25E0053EAD1 /* Info.plist */,
+				8741796D2A20C2C30053EAD1 /* Inceptionv3.mlmodel */,
 			);
 			path = SeeFood;
 			sourceTree = "<group>";
@@ -127,7 +130,6 @@
 			files = (
 				874179662A20C25E0053EAD1 /* LaunchScreen.storyboard in Resources */,
 				874179632A20C25E0053EAD1 /* Assets.xcassets in Resources */,
-				874179612A20C25E0053EAD1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874179702A20D4060053EAD1 /* NavBarControllerViewController.swift in Sources */,
 				8741795E2A20C25E0053EAD1 /* ViewController.swift in Sources */,
+				8741796E2A20C2C30053EAD1 /* Inceptionv3.mlmodel in Sources */,
 				8741795A2A20C25E0053EAD1 /* AppDelegate.swift in Sources */,
 				8741795C2A20C25E0053EAD1 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +151,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8741795F2A20C25E0053EAD1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				874179602A20C25E0053EAD1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		874179642A20C25E0053EAD1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +287,6 @@
 				INFOPLIST_FILE = SeeFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +313,6 @@
 				INFOPLIST_FILE = SeeFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
