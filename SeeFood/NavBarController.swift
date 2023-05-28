@@ -11,7 +11,7 @@ protocol cameraButtonProtocol: AnyObject {
     func cameraButtonTapped()
 }
 
-class NavBarControllerViewController: UINavigationController {
+class NavBarController: UINavigationController {
     
     weak var delegateCameraButton: cameraButtonProtocol?
 

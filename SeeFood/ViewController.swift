@@ -12,13 +12,37 @@ import Vision
 final class ViewController: UIViewController {
     
     private let imagePicker = UIImagePickerController()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         setupConstraints()
         configureImagePicker()
         setDelegates()
+    }
+    
+    func detect(image: CIImage) {
+        guard let model = try? VNCoreMLModel(for: Inceptionv3().model) else {
+            fatalError("Loading CoreML Model Failed")
+        }
+        let request = VNCoreMLRequest(model: model) { (request, error) in
+            guard let results = request.results as? [VNClassificationObservation] else {
+                fatalError("Model failed to process image")
+            }
+            if let firstResult = results.first {
+                if firstResult.identifier.contains("hotdog") {
+                    self.navigationItem.title = "Hotdog!"
+                } else {
+                    self.navigationItem.title = "Not Hotdog!"
+                }
+            }
+        }
+        let handler = VNImageRequestHandler(ciImage: image)
+        do {
+            try handler.perform([request])
+        } catch {
+            print(error)
+        }
     }
     
     func setDelegates() {
@@ -62,6 +86,10 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
         
         if let userPickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             cameraImage.image = userPickedImage
+            guard let ciimage = CIImage(image: userPickedImage) else {
+                fatalError("Could not convert to CIImage")
+            }
+            detect(image: ciimage)
         }
         imagePicker.dismiss(animated: true)
     }
@@ -70,7 +98,6 @@ extension ViewController: UIImagePickerControllerDelegate, UINavigationControlle
 //MARK: - Camera button delegate
 extension ViewController: cameraButtonProtocol {
     func cameraButtonTapped() {
-        print("Camera tapped")
         present(imagePicker, animated: true)
     }
 }

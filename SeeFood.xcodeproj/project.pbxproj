@@ -13,7 +13,7 @@
 		874179632A20C25E0053EAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 874179622A20C25E0053EAD1 /* Assets.xcassets */; };
 		874179662A20C25E0053EAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 874179642A20C25E0053EAD1 /* LaunchScreen.storyboard */; };
 		8741796E2A20C2C30053EAD1 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8741796D2A20C2C30053EAD1 /* Inceptionv3.mlmodel */; };
-		874179702A20D4060053EAD1 /* NavBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741796F2A20D4060053EAD1 /* NavBarControllerViewController.swift */; };
+		874179702A20D4060053EAD1 /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8741796F2A20D4060053EAD1 /* NavBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		874179652A20C25E0053EAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		874179672A20C25E0053EAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8741796D2A20C2C30053EAD1 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
-		8741796F2A20D4060053EAD1 /* NavBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarControllerViewController.swift; sourceTree = "<group>"; };
+		8741796F2A20D4060053EAD1 /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 				874179592A20C25E0053EAD1 /* AppDelegate.swift */,
 				8741795B2A20C25E0053EAD1 /* SceneDelegate.swift */,
 				8741795D2A20C25E0053EAD1 /* ViewController.swift */,
-				8741796F2A20D4060053EAD1 /* NavBarControllerViewController.swift */,
+				8741796F2A20D4060053EAD1 /* NavBarController.swift */,
 				874179622A20C25E0053EAD1 /* Assets.xcassets */,
 				874179642A20C25E0053EAD1 /* LaunchScreen.storyboard */,
 				874179672A20C25E0053EAD1 /* Info.plist */,
@@ -140,7 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874179702A20D4060053EAD1 /* NavBarControllerViewController.swift in Sources */,
+				874179702A20D4060053EAD1 /* NavBarController.swift in Sources */,
 				8741795E2A20C25E0053EAD1 /* ViewController.swift in Sources */,
 				8741796E2A20C2C30053EAD1 /* Inceptionv3.mlmodel in Sources */,
 				8741795A2A20C25E0053EAD1 /* AppDelegate.swift in Sources */,
@@ -283,6 +283,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3J42942YG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeeFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -309,6 +310,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3J42942YG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeeFood/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

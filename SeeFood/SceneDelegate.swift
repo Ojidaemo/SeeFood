@@ -18,9 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         let rootViewController = ViewController()
-//        let navigationController = NavBarControllerViewController()
-//        navigationController.viewControllers = [rootViewController]
-        let navController = NavBarControllerViewController(rootViewController: rootViewController)
+        let navController = NavBarController(rootViewController: rootViewController)
         navController.delegateCameraButton = rootViewController
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
